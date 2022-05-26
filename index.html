@@ -1,427 +1,58 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-    <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-    <!--====== Title ======-->
-    <title>Thiago Evoá</title>
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
 
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-    <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="flutter_web_portfolio">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-    <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
+  <title>flutter_web_portfolio</title>
+  <link rel="manifest" href="manifest.json">
 
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '2479767905';
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
 </head>
-
-<body style="background-color: black;">
-
-    <!--====== PRELOADER PART START ======-->
-
-    <div class="preloader" style="background-color: black;">
-        <div class="loader_34">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--====== PRELOADER ENDS START ======-->
-
-    <!--====== HEADER PART START ======-->
-
-    <div id="parallax" class="header-content d-flex align-items-center" style="background-color: black;">
-        <div class="header-shape shape-one layer" data-depth="0.10">
-            <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
-        </div>
-        <div class="header-shape shape-tow layer" data-depth="0.30">
-            <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
-        </div>
-        <div class="header-shape shape-three layer" data-depth="0.40">
-            <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
-        </div>
-        <div class="header-shape shape-fore layer" data-depth="0.60">
-            <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
-        </div>
-        <div class="header-shape shape-five layer" data-depth="0.20">
-            <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
-        </div>
-        <div class="header-shape shape-six layer" data-depth="0.15">
-            <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
-        </div>
-        <div class="header-shape shape-seven layer" data-depth="0.50">
-            <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
-        </div>
-        <div class="header-shape shape-eight layer" data-depth="0.40">
-            <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
-        </div>
-        <div class="header-shape shape-nine layer" data-depth="0.20">
-            <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
-        </div>
-        <div class="header-shape shape-ten layer" data-depth="0.30">
-            <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-5 col-lg-6">
-                    <div class="header-content-right">
-                        <h4 class="sub-title" style="color: white;">Hey, I’m</h4>
-                        <h1 class="title" style="color: white;">Thiago Evoá</h1>
-                        <p>A mobile Software Engineer</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 offset-xl-1">
-                    <div class="header-image d-none d-lg-block">
-                        <img src="assets/images/banner/hero.png" alt="hero">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </header>
-
-    <!--====== HEADER PART ENDS ======-->
-
-    <!--====== ABOUT PART START ======-->
-
-    <section id="about" class="about-area pt-125 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="title" style="color: white;">About Me</h2>
-                        <a href="https://github.com/ThiagoEvoa">
-                            <h1><span class="lni-user" style="color: white;"></span></h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-content mt-50">
-                        <h5 class="about-title" style="color: white;">I lil bit about me</h5>
-                        <p>As a software developer, I'm passionate about mobile development and to teach how to do it.</p>
-                        <ul class="clearfix">
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-phone-handset"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span style="color: white;">Phone:</span> +351 913 195 242</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-envelope"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p style="font-size:96%"><span style="color: white;">Email:</span>
-                                            thiagoevoa@gmail.com</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-map-marker"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span style="color: white;">Location:</span> Lisbon, Pt</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-linkedin"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <a href="www.linkedin.com/in/thiago-evoá"><span>LinkedIn</span></a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-5 offset-xl-1 col-lg-6">
-                    <div class="about-skills pt-25">
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title" style="color: white;">Flutter</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter" style="color: white;">100</span>
-                                    </div>
-                                    <span style="color: white;">%</span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title" style="color: white;">Dart</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter" style="color: white;">100</span>
-                                    </div>
-                                    <span style="color: white;">%</span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title" style="color: white;">Android (Kotlin / Java)</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter" style="color: white;">90</span>
-                                    </div>
-                                    <span style="color: white;">%</span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="90"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title" style="color: white;">Firebase</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter" style="color: white;">90</span>
-                                    </div>
-                                    <span style="color: white;">%</span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="90"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title" style="color: white;">Nodejs</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter" style="color: white;">80</span>
-                                    </div>
-                                    <span style="color: white;">%</span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="80"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title" style="color: white;">iOS (Swift)</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter" style="color: white;">40</span>
-                                    </div>
-                                    <span style="color: white;">%</span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="40"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--====== ABOUT PART ENDS ======-->
-
-    <!--====== SERVICES PART START ======-->
-
-    <section id="service" class="services-area gray-bg pt-125 pb-130" style="background-color: black;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-30">
-                        <h2 class="title" style="color: white;">My repositories</h2>
-                        <a href="https://github.com/ThiagoEvoa">
-                            <h1><span class="lni-github" style="color: white;"></span></h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <a href="https://github.com/ThiagoEvoa/flutter_examples">
-                        <div class="single-service text-center mt-30" style="background-color: black;">
-                            <div class="service-icon">
-                                <i class="lni-mobile"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4 class="service-title" style="color: white;">Flutter
-                                    Examples</h4>
-                                <p>This repository has mobile examples using Dart language and Flutter SDK.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <a href="https://github.com/ThiagoEvoa/Aqueduct">
-                        <div class="single-service text-center mt-30" style="background-color: black;">
-                            <div class="service-icon">
-                                <i class="lni-mobile"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4 class="service-title" style="color: white;">Aqueduct</h4>
-                                    <p>This repository has api example using Dart language and Aqueduct Framework.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <a href="https://github.com/ThiagoEvoa/design_patterns">
-                        <div class="single-service text-center mt-30" style="background-color: black;">
-                            <div class="service-icon">
-                                <i class="lni-layout"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4 class="service-title" style="color: white;">Design Patterns</h4>
-                                <p>This repository has design patterns examples using Dart language.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <a href="https://github.com/ThiagoEvoa/Android">
-                        <div class="single-service text-center mt-30" style="background-color: black;">
-                            <div class="service-icon">
-                                <i class="lni-mobile"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4 class="service-title" style="color: white;">Android</h4>
-                                <p>This repository has mobile examples using Kotlin language and Android SDK.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <a href="https://github.com/ThiagoEvoa/iOS">
-                        <div class="single-service text-center mt-30" style="background-color: black;">
-                            <div class="service-icon">
-                                <i class="lni-mobile"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4 class="service-title" style="color: white;">iOS</h4>
-                                    <p>This repository has mobile examples using Swift language and iOS SDK.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <a href="https://github.com/ThiagoEvoa/Nodejs">
-                        <div class="single-service text-center mt-30" style="background-color: black;">
-                            <div class="service-icon">
-                                <i class="lni-layout"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4 class="service-title" style="color: white;">Nodejs</h4>
-                                <p>This repository has api example using Javascript language and Nodejs enviroment.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--====== BACK TOP TOP PART START ======-->
-
-    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
-
-    <!--====== BACK TOP TOP PART ENDS ======-->
-
-
-    <!--====== jquery js ======-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-
-    <!--====== Magnific Popup js ======-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <!--====== Parallax js ======-->
-    <script src="assets/js/parallax.min.js"></script>
-
-    <!--====== Counter Up js ======-->
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-
-
-    <!--====== Appear js ======-->
-    <script src="assets/js/jquery.appear.min.js"></script>
-
-    <!--====== Scrolling js ======-->
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-
-
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
-
+<body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
+      });
+    });
+  </script>
 </body>
-
 </html>
